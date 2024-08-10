@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Coloreada</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background-color: #ccff00; 
+            padding: 10px;
+        }
+        .menu {
+            background-color: #ffff66; 
+            padding: 15px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .container {
+            display: flex;
+            background-color: #0000ff;
+            height: 400px;
+            padding: 10px;
+        }
+        .content {
+            flex: 2;
+            background-color: #99ffff; 
+            padding: 20px;
+            margin-right: 10px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #00ffff; 
+            padding: 20px;
+        }
+        .footer {
+            background-color: #ff6600; 
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="background">
+    <div class="menu">
+        Menú de navegación
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            Contenido
+        </div>
+        
+        <div class="sidebar">
+            Barra lateral
+        </div>
+    </div>
+    
+    <div class="footer">
+        Footer
+    </div>
+</div>
+
+</body>
+</html>
