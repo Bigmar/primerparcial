@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Simple con Navegación</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .menu {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            height: 80%;
+            padding: 20px;
+        }
+        .content {
+            flex: 2;
+            background-color: white;
+            height: 400px;
+            margin-right: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #e0e0e0;
+            height: 400px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="background">
+    <div class="menu">
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">UMG</a></li>
+            <li><a href="#actividad">Primer Parcial</a></li>
+            <li><a href="#curso">Desarrollo Web</a></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            Creción de página web, parcial.
+        </div>
+        
+        <div class="sidebar">
+            Barra lateral
+        </div>
+    </div>
+    
+    <div class="footer">
+        Footer
+    </div>
+</div>
+
+</body>
+</html>
